@@ -6,6 +6,7 @@
     * [Project ophalen via git](#project-ophalen-via-git)
     * [Opstarten lokale testserver](#opstarten-lokale-testserver)
 * [Workflow](#workflow)
+    * [Installeer Gulp modules](#installeer-gulp-modules)
     * [Starten van Gulp.js](#starten-van-gulp)
     * [Testdata opnieuw instellen](#testdata-opnieuw-instellen)
 
@@ -30,6 +31,12 @@ Geen verdere configuratie nodig na installatie.
 ### 3. Gulp (voor stylesheets en asset management)
 1. Installeer [Node.js](http://nodejs.org/) voor npm (node package manager)
 2. <b>Voer <code>npm install</code> uit in de root van het project</b>
+
+### 4. Pas je hosts file aan
+Pas je hosts file aan en voeg deze regel toe: <code>192.168.13.37       citygames.designosource.dev</code>
+Dit zorgt ervoor dat je naar de development website kan surfen, anders kan dit via [192.168.13.37.xip.io](192.168.13.37.xip.io)
+
+Om het project mobiel te bereiken kan je enkel via [192.168.13.37.xip.io](192.168.13.37.xip.io) verbinden.
 
 ## Project ophalen via git
 ### HTTPS
