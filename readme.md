@@ -62,12 +62,15 @@ Halt zorgt ervoor dat de virtuele machine volledig wordt afgesloten.
 
 Ontwikkelen op deze manier brengt een bepaalde workflow met zich mee.
 
-## 1. Starten van Gulp
+## 1. Installeer Gulp modules
+Installeer alle dependencies van Gulp met <code>npm install</code>
+
+## 2. Starten van Gulp
 Start Gulp in de Terminal via het commando <code>gulp</code> of <code>gulp watch</code>. Dit zorgt ervoor dat
 wanneer je een aanpassing doet aan een bestand automatisch de SASS en Js files worden verkleind en
 geoptimaliseerd. De browser zal ook automatisch verversen.
 
-## 2. Testdata opnieuw instellen
+## 3. Testdata opnieuw instellen
 Om de testtdata die automatisch op de serverdatabase is ingesteld opnieuw te herstellen (na het verwijderen of
 toevoegen van items) kan je het commando <code>php artisan migrate:refresh --seed</code> gebruiken. Dit zorgt ervoor
 dat alle database tabellen worden leeggemaakt, hersteld en opnieuw ingevuld met testdata.
