@@ -21,6 +21,13 @@ Dit is echter voorzien in het framework.
 Om mee te werken/te beginnen met development aan het citygames platform heb je enkele tools nodig
 om het project mee op te zetten.
 
+## Project ophalen via git
+### HTTPS
+<code>git clone https://github.com/designosource/citygame.git</code>
+
+### SSH
+<code>git clone git@github.com:designosource/citygame.git</code>
+
 ## Development omgeving opzetten
 ### 1. Installeer [Virtualbox](https://www.virtualbox.org/)
 Geen verdere configuratie nodig na installatie.
@@ -42,13 +49,6 @@ Om het project mobiel te bereiken kan je enkel via [192.168.13.37.xip.io](192.16
 1. Installeer [Composer](https://getcomposer.org/) <b>globaal</b>
 2. In de root van het project, voer <code>composer install</code> uit.
 3. Voor de zekerheid voer ook <code>composer update --dev</code> uit.
-
-## Project ophalen via git
-### HTTPS
-<code>git clone https://github.com/designosource/citygame.git</code>
-
-### SSH
-<code>git clone git@github.com:designosource/citygame.git</code>
 
 ## Opstarten lokale testserver
 Omdat het project verschillende vereisten heeft van een server en er zekerheid moet zijn dat de applicatie
