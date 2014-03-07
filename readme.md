@@ -38,6 +38,11 @@ Dit zorgt ervoor dat je naar de development website kan surfen, anders kan dit v
 
 Om het project mobiel te bereiken kan je enkel via [192.168.13.37.xip.io](192.168.13.37.xip.io) verbinden.
 
+### 5. Composer
+1. Installeer [Composer](https://getcomposer.org/) <b>globaal</b>
+2. In de root van het project, voer <code>composer install</code> uit.
+3. Voor de zekerheid voer ook <code>composer update --dev</code> uit.
+
 ## Project ophalen via git
 ### HTTPS
 <code>git clone https://github.com/designosource/citygame.git</code>
