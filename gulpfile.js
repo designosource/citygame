@@ -1,12 +1,10 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
-    notify = require('gulp-notify'),
     sass = require('gulp-ruby-sass'),
     autoprefix = require('gulp-autoprefixer'),
     minifyCSS = require('gulp-minify-css'),
     uglify = require('gulp-uglify'),
-    concat = require('gulp-concat'),
-    livereload = require('gulp-livereload');
+    concat = require('gulp-concat');
 
 var exec = require('child_process').exec;
 var sys = require('sys');
@@ -18,7 +16,7 @@ var sassDir = 'app/assets/sass';
 var targetCSSDir = 'public/css';
 
 // Where do you store your Javascript files?
-var jsDir = 'app/assets/coffee';
+var jsDir = 'app/assets/js';
 
 // Which directory should Javascript compile to?
 var targetJSDir = 'public/js';
@@ -31,8 +29,6 @@ gulp.task('css', function () {
         .pipe(sass({ style: 'compressed' }).on('error', gutil.log))
         .pipe(autoprefix('last 5 version'))
         .pipe(gulp.dest(targetCSSDir))
-        .pipe(livereload())
-        .pipe(notify('CSS minified'))
 });
 
 // Handle Javascript compilation
@@ -41,8 +37,6 @@ gulp.task('js', function () {
         .pipe(concat('app.js'))
         .pipe(uglify({mangle: false}))
         .pipe(gulp.dest(targetJSDir))
-        .pipe(livereload())
-        .pipe(notify('JS minified and concatenated'))
 });
 
 
@@ -50,7 +44,6 @@ gulp.task('js', function () {
 gulp.task('watch', function () {
     gulp.watch(sassDir + '/**/*.sass', ['css']);
     gulp.watch(jsDir + '/**/*.js', ['js']);
-    gulp.watch('app/**/*.php', livereload());
 });
 
 // What tasks does running gulp trigger?
