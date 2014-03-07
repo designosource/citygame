@@ -41,9 +41,9 @@ Geen verdere configuratie nodig na installatie.
 
 ### 4. Pas je hosts file aan
 Pas je hosts file aan en voeg deze regel toe: <code>192.168.13.37       citygames.designosource.dev</code>
-Dit zorgt ervoor dat je naar de development website kan surfen, anders kan dit via [192.168.13.37.xip.io](192.168.13.37.xip.io)
+Dit zorgt ervoor dat je naar de development website kan surfen, anders kan dit via [192.168.13.37.xip.io](http://192.168.13.37.xip.io)
 
-Om het project mobiel te bereiken kan je enkel via [192.168.13.37.xip.io](192.168.13.37.xip.io) verbinden.
+Om het project mobiel te bereiken kan je enkel via [192.168.13.37.xip.io](http://192.168.13.37.xip.io) verbinden.
 
 ### 5. Composer
 1. Installeer [Composer](https://getcomposer.org/) <b>globaal</b>
