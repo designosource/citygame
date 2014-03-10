@@ -83,6 +83,9 @@ wanneer je een aanpassing doet aan een bestand automatisch de SASS en Js files w
 geoptimaliseerd. De browser zal ook automatisch verversen.
 
 ## 3. Testdata opnieuw instellen
+<b>Voor het invoeren van een Artisan commando moet je ingelogd zijn op de vagrant server, dit kan eenvoudig door <code>vagrant ssh</code>
+uit te voeren.</b>
+
 Om de testtdata die automatisch op de serverdatabase is ingesteld opnieuw te herstellen (na het verwijderen of
 toevoegen van items) kan je het commando <code>php artisan migrate:refresh --seed</code> gebruiken. Dit zorgt ervoor
 dat alle database tabellen worden leeggemaakt, hersteld en opnieuw ingevuld met testdata.

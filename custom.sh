@@ -52,4 +52,7 @@ echo "--- Composer is the future. But you knew that, did you master? Nice job. -
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
+echo "--- Creating database ---"
+mysql -u root -proot -e "create database citygames; GRANT ALL PRIVILEGES ON citygames.* TO 'root'@'%' IDENTIFIED BY 'root'";
+
 # Laravel stuff here, if you want
